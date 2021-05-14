@@ -2,8 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+  font-family: 'Montserrat', sans-serif;
 
 body {
   display: flex;
@@ -40,6 +39,44 @@ body {
  }
 }
 
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 90%;
+  margin: 3rem auto;
+  padding: 1rem;
+
+  img {
+    max-width: 100%;
+  }
+
+  .productSpecifications{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 10rem;
+    line-height: 2rem;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #A31413;
+      text-transform: uppercase;
+    }
+
+    .rating {
+      color: #A31413;
+      font-weight: 600;
+    }
+
+    .specifications {
+      line-height: 1.2rem;
+      margin: .8rem 0;
+    }
+  }
+}
+}
 
 
 
