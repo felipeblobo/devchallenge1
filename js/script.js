@@ -14,8 +14,6 @@ const imageTransitions = () => {
 
     event.target.classList.add("active");
 
-    console.log(currentImage.attributes.src.value);
-    console.log(imagesSrc[0]);
     if (currentImage.attributes.src.value === imagesSrc[0]) {
       currentImage.setAttribute("src", imagesSrc[1]);
     } else if (currentImage.attributes.src.value == imagesSrc[1]) {

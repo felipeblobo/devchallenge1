@@ -6,6 +6,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +33,12 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 36px;
+  }
 }
 
 aside .verticalBar {
@@ -94,8 +105,17 @@ aside .ballDecoration.active {
           align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navContainer nav ul {
+    position: absolute;
+    width: 100%;
+    top: 5rem;
+    left: 0px;
+    display: block;
+    background: #e97575;
+    color: white;
+    height: calc(100vh - 4rem);
+    z-index: 4;
     display: none;
   }
 }
@@ -143,20 +163,39 @@ aside .ballDecoration.active {
       grid-template-columns: 1fr 1fr;
   gap: 1rem;
   width: 90%;
-  margin: 3rem auto;
   padding: 1rem;
+  height: 100%;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .mainContent {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: block;
+    margin-bottom: 2rem;
   }
 }
 
-.mainContent img {
-  min-width: 350px;
-  max-width: 100%;
+.mainContent .imageDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContent .imageDiv img {
+  min-width: 20rem;
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  .mainContent .imageDiv img {
+    min-width: 10rem;
+    max-width: 80%;
+  }
 }
 
 .mainContent .productSpecifications {
@@ -174,6 +213,16 @@ aside .ballDecoration.active {
   line-height: 2rem;
 }
 
+@media (max-width: 768px) {
+  .mainContent .productSpecifications {
+    padding: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
 .mainContent .productSpecifications h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
@@ -181,9 +230,27 @@ aside .ballDecoration.active {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .mainContent .productSpecifications h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+}
+
 .mainContent .productSpecifications .rating {
   color: #ca3b3a;
   font-weight: 600;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContent .productSpecifications .rating span:first-child {
+  margin-right: 2rem;
 }
 
 .mainContent .productSpecifications .specifications {
@@ -200,15 +267,26 @@ aside .ballDecoration.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mainContent .productSpecifications .buySecction {
+    margin-top: .3rem;
+  }
 }
 
 .mainContent .productSpecifications .buySecction .price {
   font-size: 2rem;
   font-weight: 600;
+  margin-right: 4rem;
+}
+
+@media (max-width: 768px) {
+  .mainContent .productSpecifications .buySecction .price {
+    font-size: 1.3rem;
+    margin-right: 2rem;
+  }
 }
 
 .mainContent .productSpecifications .buySecction button {
@@ -218,6 +296,12 @@ aside .ballDecoration.active {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mainContent .productSpecifications .buySecction button {
+    width: 120px;
+  }
 }
 
 .mainContent .productSpecifications .buySecction:hover {
@@ -238,6 +322,14 @@ footer {
           justify-content: center;
   padding: 1rem;
   background-color: #e08e8e63;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: block;
+    height: 8rem;
+    position: relative;
+  }
 }
 
 footer .footerItem {

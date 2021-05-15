@@ -18,19 +18,18 @@
     />
   </head>
   <body>
-
     <aside>
-      <div class='verticalBar'></div>
-      <div class='ballDecoration active' ></div>
-      <div class='ballDecoration'></div>
-      <div class='ballDecoration'></div>
-      <div class='verticalBar'></div>
+      <div class="verticalBar"></div>
+      <div class="ballDecoration active"></div>
+      <div class="ballDecoration"></div>
+      <div class="ballDecoration"></div>
+      <div class="verticalBar"></div>
     </aside>
 
     <div class="container">
       <div class="navContainer">
         <img id="logo" src="./assets/logo.svg" alt="logo" />
-        <nav id='nav'>
+        <nav id="nav">
           <ul>
             <li>Home</li>
             <li>About</li>
@@ -43,15 +42,29 @@
           <span class="material-icons-outlined material-icons">
             shopping_cart
           </span>
-          <span id='menuDropdown' class="material-icons material-icons-outlined"> menu </span>
+          <span
+            id="menuDropdown"
+            class="material-icons material-icons-outlined"
+          >
+            menu
+          </span>
         </div>
       </div>
       <div class="mainContent">
-        <div class='imageDiv'><img id='mainImage' src="assets/fone.png" alt="headphones" /></div>
+        <div class="imageDiv">
+          <img id="mainImage" src="assets/fone.png" alt="headphones" />
+        </div>
         <div class="productSpecifications">
           <h2>Hyper X ON-EAR</h2>
           <p class="shortDescription">Wireless over-ear headphones</p>
-          <p class="rating">4.2 (335)</p>
+          <div class="rating">
+            <span>4.2 (335)</span>
+            <span class="material-icons material-icons-outlined">star</span>
+            <span class="material-icons material-icons-outlined">star</span>
+            <span class="material-icons material-icons-outlined">star</span>
+            <span class="material-icons material-icons-outlined">star</span>
+            <span class="material-icons material-icons-outlined"> star_half </span>
+        </div>
           <p class="specifications">
             <strong>Driver unit</strong><br />
             70 mm, dome type (CCAW Voice Col)
@@ -88,6 +101,6 @@
       </footer>
     </div>
 
-  <script src='js/script.js'></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
