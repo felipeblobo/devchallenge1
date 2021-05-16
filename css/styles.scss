@@ -71,17 +71,24 @@ aside {
     align-items: center;
 
     @media (max-width: 768px) {
-      position: absolute;
-      width: 100%;
-      top: 5rem;
-      left: 0px;
-      display: block;
-      background:#e97575;
-      color: white;
-      height: calc(100vh - 4rem);
-      z-index: 4;
       display: none;
-    }
+
+      &.active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 5rem;
+        left: 0px;
+        display: block;
+        background:#e97575;
+        color: white;
+        height: 100%;
+        z-index: 10;
+        
+      }
+
+      }
+    
 
     li {
       list-style-type: none;
@@ -89,6 +96,11 @@ aside {
       font-size: 1.2rem;
       cursor: pointer;
       position: relative;
+
+      @media (max-width: 768px) {
+
+        margin: 1.5rem 1rem;
+      }
 
       &::after {
         content: "";
@@ -113,8 +125,7 @@ aside {
     margin: 0 0.5rem;
     cursor: pointer;
 
-    @media (max-width: 600px) {
-    }
+       
   }
 }
 
@@ -143,6 +154,7 @@ aside {
       @media (max-width: 768px) {
         min-width: 10rem;
         max-width: 80%;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -181,8 +193,8 @@ aside {
       display: flex;
       align-items: center;
 
-      & span:first-child {
-        margin-right: 2rem;
+      & span:last-child {
+        margin-left: 2rem;
       }
     }
 

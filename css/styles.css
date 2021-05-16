@@ -107,6 +107,10 @@ aside .ballDecoration.active {
 
 @media (max-width: 768px) {
   .navContainer nav ul {
+    display: none;
+  }
+  .navContainer nav ul.active {
+    display: block;
     position: absolute;
     width: 100%;
     top: 5rem;
@@ -114,9 +118,8 @@ aside .ballDecoration.active {
     display: block;
     background: #e97575;
     color: white;
-    height: calc(100vh - 4rem);
-    z-index: 4;
-    display: none;
+    height: 100%;
+    z-index: 10;
   }
 }
 
@@ -126,6 +129,12 @@ aside .ballDecoration.active {
   font-size: 1.2rem;
   cursor: pointer;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .navContainer nav ul li {
+    margin: 1.5rem 1rem;
+  }
 }
 
 .navContainer nav ul li::after {
@@ -195,6 +204,7 @@ aside .ballDecoration.active {
   .mainContent .imageDiv img {
     min-width: 10rem;
     max-width: 80%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -249,8 +259,8 @@ aside .ballDecoration.active {
           align-items: center;
 }
 
-.mainContent .productSpecifications .rating span:first-child {
-  margin-right: 2rem;
+.mainContent .productSpecifications .rating span:last-child {
+  margin-left: 2rem;
 }
 
 .mainContent .productSpecifications .specifications {
