@@ -7,7 +7,7 @@
    
 <p align="center">
     <h3>Resultado</h3>
-    <img src="https://github.com/felipeblobo/devchallenge1/blob/master/CPT2105152245-1920x975.gif?raw=true" alt="Logo" width="1000">
+    <img src="https://github.com/felipeblobo/devchallenge1/blob/master/CPT2105152304-1920x975.gif" alt="Logo" width="1000">
  <br /> 
   <p align="center">
      Página para compra de um fone de ouvido
