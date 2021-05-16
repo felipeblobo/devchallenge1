@@ -36,5 +36,25 @@ function toggleMenu () {
   nav.classList.toggle('active')
  
 }
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+if (mediaQuery.matches) {
+
+  function toggleMenu () {
+    const toggleMenuBigScreen = document.querySelector('.toggleMenuBigScreen');
+    toggleMenuBigScreen.innerHTML = 
+    `<nav >
+          <ul id="menuBigScreen">
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav> `
+   const nav = document.getElementById('menuBigScreen');
+   nav.classList.toggle('active');
+  }
+}
 
 btnMenu.addEventListener('click', toggleMenu)
+
