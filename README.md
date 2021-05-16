@@ -1,8 +1,13 @@
 <br />
 <p align="center">
     <img src="https://i.imgur.com/YuUaCDv.gif" alt="Logo" width="1000">
-
+    Template do desafio
  <br />
+   
+<p align="center">
+    <img src="https://imgur.com/BYDr42i.gif" alt="Logo" width="1000">
+    Resultado alcançado
+ <br /> 
   <p align="center">
      Página para compra de um fone de ouvido
        <br />
