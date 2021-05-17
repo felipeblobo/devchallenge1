@@ -36,7 +36,7 @@ function toggleMenu () {
   nav.classList.toggle('active')
  
 }
-const mediaQuery = window.matchMedia('(min-width: 768px)');
+const mediaQuery = window.matchMedia('(min-width: 1024px)');
 
 if (mediaQuery.matches) {
 

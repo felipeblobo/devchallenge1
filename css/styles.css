@@ -197,7 +197,7 @@ aside .ballDecoration.active {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 420px) {
   .container .mainContent {
     display: block;
     margin-bottom: 2rem;
@@ -221,7 +221,7 @@ aside .ballDecoration.active {
   max-width: 80%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 420px) {
   .container .mainContent .imageDiv img {
     min-width: 10rem;
     max-width: 80%;
