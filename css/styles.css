@@ -197,10 +197,16 @@ aside .ballDecoration.active {
   height: 100%;
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
   .container .mainContent {
     display: block;
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 720px) {
+  .container .mainContent {
+    margin-bottom: 4rem;
   }
 }
 
@@ -217,11 +223,11 @@ aside .ballDecoration.active {
 }
 
 .container .mainContent .imageDiv img {
-  min-width: 20rem;
+  min-width: 15rem;
   max-width: 80%;
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
   .container .mainContent .imageDiv img {
     min-width: 10rem;
     max-width: 80%;
@@ -244,7 +250,7 @@ aside .ballDecoration.active {
   line-height: 2rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container .mainContent .productSpecifications {
     padding: 0rem;
     -webkit-box-align: center;
@@ -261,7 +267,7 @@ aside .ballDecoration.active {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container .mainContent .productSpecifications h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -304,7 +310,7 @@ aside .ballDecoration.active {
           align-items: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container .mainContent .productSpecifications .buySecction {
     margin-top: 0.3rem;
   }
@@ -316,7 +322,7 @@ aside .ballDecoration.active {
   margin-right: 4rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container .mainContent .productSpecifications .buySecction .price {
     font-size: 1.3rem;
     margin-right: 2rem;
@@ -332,7 +338,7 @@ aside .ballDecoration.active {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container .mainContent .productSpecifications .buySecction button {
     width: 120px;
   }

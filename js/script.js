@@ -30,6 +30,7 @@ imageTransitions();
 
 
 const btnMenu = document.getElementById('menuDropdown');
+btnMenu.addEventListener('click', toggleMenu)
 
 function toggleMenu () {
   const nav = document.getElementById('nav');
@@ -56,5 +57,4 @@ if (mediaQuery.matches) {
   }
 }
 
-btnMenu.addEventListener('click', toggleMenu)
 
