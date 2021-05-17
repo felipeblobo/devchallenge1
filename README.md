@@ -1,12 +1,13 @@
 <br />
 <p align="center">
+     <h3>Template do desafio</h3>
     <img src="https://i.imgur.com/YuUaCDv.gif" alt="Logo" width="1000">
-    Template do desafio
+   
  <br />
    
 <p align="center">
-    <img src="https://imgur.com/BYDr42i.gif" alt="Logo" width="1000">
-    Resultado alcançado
+    <h3>Resultado</h3>
+    <img src="https://github.com/felipeblobo/devchallenge1/blob/master/CPT2105152304-1920x975.gif" alt="Logo" width="1000">
  <br /> 
   <p align="center">
      Página para compra de um fone de ouvido
